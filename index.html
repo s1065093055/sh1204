@@ -1,69 +1,211 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<html><head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" id="mixia_vpid">
+
+<style type="text/css">
+
+body{ font-size:17px; line-height:50px;background-color:#FCFCFC;}
+
+.middel {
+
+	text-align:center;margin:auto;
+
+}
+
+.rowtop1{ 
+
+ 	line-height:52px;
+
+	height:54px;
+
+	width:100px;
+
+	color:#f9f9f9;
+
+	background-color:#3ba354;
+
+	font-size:16px;
+
+	font-weight:550;
+
+	font-family:Arial;
+
+	border:0px solid #dcdcdc;
+
+	-webkit-border-top-left-radius:3px;
+
+	-moz-border-radius-topleft:3px;
+
+	border-top-left-radius:3px;
+
+	-webkit-border-top-right-radius:3px;
+
+	-moz-border-radius-topright:3px;
+
+	border-top-right-radius:3px;
+
+	-webkit-border-bottom-left-radius:3px;
+
+	-moz-border-radius-bottomleft:3px;
+
+	border-bottom-left-radius:3px;
+
+	-webkit-border-bottom-right-radius:3px;
+
+	-moz-border-radius-bottomright:3px;
+
+	border-bottom-right-radius:3px;
+
+	-moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+
+	-webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+
+	box-shadow: inset 0px 0px 0px 0px #ffffff;
+
+	text-align:center;
+
+	display:inline-block;
+
+	text-decoration:none;
+
+	margin-bottom:20px;
+
+	
+
+}
+
+.rowtop1:hover {
+
+	background-color:#1c9439;
+
+}
+
+.rowtop{
+
+  line-height:52px;
+
+  height:54px;
+
+  width:150px;
+
+  color:#777777;
+
+  background-color:#ededed;
+
+  font-size:17px;
+
+  font-weight:550;
+
+  font-family:Arial;
+
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #ededed), color-stop(1, #f5f5f5));
+
+  background:-moz-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+
+  background:-o-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+
+  background:-ms-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+
+  background:linear-gradient(to bottom, #ededed 5%, #f5f5f5 100%);
+
+  background:-webkit-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#f5f5f5',GradientType=0);
+
+  border:1px solid #dcdcdc;
+
+  -webkit-border-top-left-radius:6px;
+
+  -moz-border-radius-topleft:6px;
+
+  border-top-left-radius:6px;
+
+  -webkit-border-top-right-radius:6px;
+
+  -moz-border-radius-topright:6px;
+
+  border-top-right-radius:6px;
+
+  -webkit-border-bottom-left-radius:6px;
+
+  -moz-border-radius-bottomleft:6px;
+
+  border-bottom-left-radius:6px;
+
+  -webkit-border-bottom-right-radius:6px;
+
+  -moz-border-radius-bottomright:6px;
+
+  border-bottom-right-radius:6px;
+
+  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+
+  text-align:center;
+
+  display:inline-block;
+
+  text-decoration:none;
+
+  margin-bottom:20px;
+
+}
+
+.rowtop:hover{
+
+  background-color:#f5f5f5;
+
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #f5f5f5), color-stop(1, #ededed));
+
+  background:-moz-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+
+  background:-o-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+
+  background:-ms-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+
+  background:linear-gradient(to bottom, #f5f5f5 5%, #ededed 100%);
+
+  background:-webkit-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed',GradientType=0);
+
+}
+
+body {
+
+                        /*此处背景图自行替换*/
+
+                       
+
+                        font: 150%/1.6 Baskerville, Palatino, serif;
+
+                    }
+
+</style>
+
+<title>尚洪网络工作室</title>
+
 </head>
+
 <body>
 
-<div data-role="page" id="pageone">
-  <div data-role="header">
-    <h1>尚洪网络工作室</h1>
-    <div data-role="navbar">
-      <ul>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=424157&sign=4843127060&fr=qq&ch=yingyongbao">商城主页</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427623&sign=34c37b50a9&fr=qq&ch=yingyongbao">万能影视</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=424160&sign=34ef624df3&fr=qq&ch=yingyongbao">福利推送</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427121&sign=ae41d43339&fr=qq&ch=yingyongbao">在线工具</a></li>      
-         </ul>
-            <ul class="ui-grid-c">
+<div class="middel">
 
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427624&sign=52b0ef523c&fr=qq&ch=yingyongbao">电视直播</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427133&sign=692a275ce8&fr=qq&ch=yingyongbao">音乐试听</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=429766&sign=5d85fca1a8&fr=qq&ch=yingyongbao">短链加密</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427123&sign=85805ad310&fr=qq&ch=yingyongbao">贴牌加盟</a></li>
-      
-      </ul>
-    </div>
-  </div>
-    <div data-role="collapsible">
-        <h3>——点击查看公告，学习使用说明——</h3>
-        <p>大家好、这里是尚洪网络工作室，本站为大家提供了多功能便捷入口，iOS软件版以及安卓版正式上线，安卓软件版无广告，更流畅，，，温馨提示，在使用过程中，出现问题，以及了解问题，售后问题，请第一时间联系尚洪工作室、微信:13420200987——联系QQ:1065093055</p>
-      </div>
-      <marquee>大家好、这里是尚洪网络工作室，本站为大家提供了多功能便捷入口，iOS软件版以及安卓版正式上线，安卓软件版无广告，更流畅，，，温馨提示，在使用过程中，出现问题，以及了解问题，售后问题，请第一时间联系尚洪工作室、微信:13420200987——联系QQ:1065093055</marquee>
- <input type="button" value="＜＜＜尚洪工作室咨询中心＞＞＞" onclick="javascript:location.href=' http://webcdn.hoolai.com/group1/M00/00/77/CgIJKl4P9PqAB4q-AAKIE5ttjCU031.jpg'" /> 
- 
-      <video width="360px" height="200px" controls="controls">
-  <source src="http://jsmov2.a.yximgs.com/upic/2020/01/08/10/BMjAyMDAxMDgxMDU3NDNfMTUwMzk2MzU1XzIxNDQzOTAxNTczXzFfMw==_b_Bd9cc563c2fdbea5af3baf79ceb38806f.mp4?tag=1-1578457641-sp-0-oluzxwuxnw-a27c28f9a56bd911"video/mp4" />
- 
-        </object>
-        </video>
-      
+<h4 data="FOLDER">影视中心</h4>
 
-        
-      <img src="http://webcdn.hoolai.com/group1/M00/00/78/CgIJK14P-7mANGnGAABNGwyBDLc371.jpg" width="360px" height="55px" />
-      
-      <div data-role="navbar">
-      <ul>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=424157&sign=4843127060&fr=qq&ch=yingyongbao">微码商城主页</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427123&sign=85805ad310&fr=qq&ch=yingyongbao">贴牌合作加盟</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427623&sign=34c37b50a9&fr=qq&ch=yingyongbao">万能影视中心</a></li>  
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=424160&sign=34ef624df3&fr=qq&ch=yingyongbao">免费福利推送</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427121&sign=ae41d43339&fr=qq&ch=yingyongbao">在线工具制作</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427133&sign=692a275ce8&fr=qq&ch=yingyongbao">在线音乐试听</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427624&sign=52b0ef523c&fr=qq&ch=yingyongbao">在线电视直播</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=429766&sign=5d85fca1a8&fr=qq&ch=yingyongbao">短链网址加密</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=429768&sign=d3e9c47c5b&fr=qq&ch=yingyongbao">小视频去水印</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=430791&sign=fc887c9826&fr=qq&ch=yingyongbao">防红短链生成</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=430793&sign=823840b3fa&fr=qq&ch=yingyongbao">在线科学计算</a></li>
-        <li><a href="https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=424514&sign=b2a97ee919&fr=qq&ch=yingyongbao">高清电影直播</a></li>
-       
-       </ul>
-        <ul class="ui-grid-c">
 
-        <input type="button" value="📱苹果，安卓，软件版下载" onclick="javascript:location.href='https://weixin.izhibi.com/zhibiserver/wxarticle/vw?id=427459&sign=567b1900be&fr=qq&ch=yingyongbaohttps://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/35ef9f9eecf6268c1873535aec7d1c854cec1492c44a5ea70750283c2271c1d671f49a269060372fdfc462a08aeb61e3?pictype=scale&from=30111&version=3.3.3.3&uin=1065093055&fname=IMG_20200109_010945.jpg&size=1024'" /> 
-    
-    </div>
-      <img src="http://webcdn.hoolai.com/group1/M00/00/78/CgIJK14QrGaAEwZdAAAN7PaNskM564.jpg" width="360px" height="60px" />
+<a href="http://www.52kkpp.com/" class="rowtop1">吾爱影视</a>
+
+<a href="http://www.xmdyw.net/vodtype/2.html" class="rowtop1">夏沫影视</a>
+
+<a href="https://v.weiaidy.com/" class="rowtop1">天天追剧</a>
+
+<a href="http://v.bwcxy.com/vodtype/1.html" class="rowtop1">初心影视</a>
+
+<a href="http://51lia.com/" class="rowtop1">樱桃影视</a>
+<a href="https://www.laodouban.com/" class="rowtop1">影视云擎</a>
